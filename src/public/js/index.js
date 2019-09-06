@@ -1,10 +1,26 @@
 import '@babel/polyfill';
 {
-    let a = 10;
-    
-    setTimeout(() => {
-        // document.write(a)
-    })
-    
-    console.log('啊实打实asdas啊实打实dasdasdaasdassdasasasda啊实打实sddaasdasdsdasd')
+    class AlertBox {
+
+        textContent (text = '默认无链接') {
+
+            let p = document.createElement('p');
+            p.textContent = text;
+            let body = document.getElementsByTagName('body')[0];
+            console.log(body)
+            // body.innerHTML = p;
+            body.appendChild(p)
+        }
+    }
+    const alertBox = new AlertBox();
+    alertBox.textContent()
+}
+
+{
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    const a = 1;
+    let b;
+    var c;
 }
